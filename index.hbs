@@ -15,7 +15,7 @@
                                         {{plural count.posts empty="No articles" singular="1 article" plural="% articles"}}
                                     </div>
                                 </header>
-                                {{#get "posts" order="published_at asc" filter="tag:{{slug}}"
+                                {{#get "posts" order="published_at desc" filter="tag:{{slug}}"
                                     limit="5" as |featured|}}
                                     <ul class="topic-article-feed u-plain-list">
                                         {{#foreach featured}}
