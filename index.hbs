@@ -3,7 +3,7 @@
 <div class="content-area">
     <main class="site-main container">
         {{> featured}}
-        {{#get "tags" limit="all" include="count.posts"}}
+        {{#get "tags" limit="all" include="count.posts" filter="slug:[crypto-philosophy,ethereum-applications,ethereum-development,peer-protocols,protocol-theory,zero-knowledge]"}}
             <div class="topic-feed">
                 <div class="row">
                     {{#foreach tags}}
